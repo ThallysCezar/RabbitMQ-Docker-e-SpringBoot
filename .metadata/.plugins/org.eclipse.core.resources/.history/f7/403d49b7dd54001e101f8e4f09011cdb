@@ -1,0 +1,15 @@
+package com.ms.backend.api;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ms.backend.consumer.PagamentoFacade;
+
+@RestController
+@RequestMapping("/pagamentos")
+public class PagamentoAPI {
+
+	@Autowired
+	private PagamentoFacade pagamentoFacade;
+}

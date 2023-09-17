@@ -1,0 +1,18 @@
+package producer;
+
+import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class PagamentoSucessoProdutor {
+
+
+	@Autowired
+	private AmqpTemplate amqpTemplate;
+	
+	public void gerarResposta(String mensagem) {
+		amqpTemplate.convertAndSend(
+				"pagamento-reponse-sucesso-exchange",
+				"pagamento-response-sucesso-rout-key",
+				mensagem);
+	}
+}

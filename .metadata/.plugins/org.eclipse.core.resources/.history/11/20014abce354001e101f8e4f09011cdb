@@ -1,0 +1,5 @@
+package com.ms.backend.consumer;
+
+public class PagamentoResponseErroCunsumidor {
+
+}

@@ -1,0 +1,5 @@
+package com.ms.backend.worker.producer;
+
+public class PagamentoErroProducer {
+
+}

@@ -1,0 +1,17 @@
+package producer;
+
+import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class PagamentoErroProdutor {
+
+	@Autowired
+	private AmqpTemplate amqpTemplate;
+	
+	public void gerarResposta(String mensagem) {
+		amqpTemplate.convertAndSend(
+				"pagamento-reponse-erro-exchange",
+				"pagamento-response-erro-rout-key",
+				mensagem);
+	}
+}

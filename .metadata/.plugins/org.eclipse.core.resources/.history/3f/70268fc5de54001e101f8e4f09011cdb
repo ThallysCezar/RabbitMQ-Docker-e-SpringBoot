@@ -1,0 +1,8 @@
+package com.ms.backend.producer;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class PagamentoRequestProducer {
+
+}

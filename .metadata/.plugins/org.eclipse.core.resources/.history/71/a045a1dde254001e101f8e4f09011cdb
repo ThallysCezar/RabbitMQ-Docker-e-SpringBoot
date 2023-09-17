@@ -1,0 +1,5 @@
+package com.ms.backend.facade;
+
+public class PagamentoResponseErroCunsumidor {
+
+}

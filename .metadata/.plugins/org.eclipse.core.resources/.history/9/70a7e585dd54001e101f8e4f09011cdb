@@ -1,0 +1,10 @@
+package com.ms.backend.dtos;
+
+import java.math.BigDecimal;
+
+public class PagamentoDTO {
+
+	private String numeroPedido;
+	private BigDecimal valor;
+	private String produto;
+}

@@ -1,0 +1,5 @@
+package com.ms.backend.api;
+
+public class PagamentoAPI {
+
+}
